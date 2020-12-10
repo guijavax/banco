@@ -8,7 +8,5 @@ sealed class Response (open val response : ResponseEntity<Any>){
 }
 
 class SentResponse() {
-    fun sent(resp: Response) : ResponseEntity<Any> {
-        return resp.response
-    }
+    fun sent(resp: Response) = resp.response
 }

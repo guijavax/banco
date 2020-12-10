@@ -1,5 +1,6 @@
 package com.api.banco.requestInput
 
+import java.io.Serializable
 import javax.validation.constraints.NotBlank
 import javax.validation.constraints.NotNull
 import javax.validation.constraints.Size
@@ -29,7 +30,7 @@ data class Endereco(
         @Size(min = 5)
         @NotNull(message = "O campo Pais é Obrigatorio!")
         val pais : String? = null
-) {
+) : Serializable {
 
 
 }
