@@ -30,7 +30,7 @@ data class Endereco(
         @Size(min = 5)
         @NotNull(message = "O campo Pais é Obrigatorio!")
         val pais : String? = null
-) : Serializable {
+)  {
 
 
 }
